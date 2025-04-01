@@ -1,0 +1,14 @@
+{
+  "products": {
+    "read": "true",
+    "write": "true",
+    "update": "true",
+    "delete": "true'"
+  },
+  "users": {
+    "read": "true",
+    "write": "true", 
+    "update": "true", 
+    "delete": "true'"
+  }
+}
