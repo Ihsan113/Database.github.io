@@ -36,11 +36,13 @@ if (fs.existsSync(rulesPath)) {
   }
 }
 
-// Konfigurasi CORS untuk mengizinkan request dari localhost:8080 dan mengirim cookie
+
+
 app.use(cors({
-  origin: 'http://localhost:8080',
+  origin: ['http://localhost:8080', 'https://databasegithubio-production.up.railway.app', 'https://anotherdomain.com'],
   credentials: true
 }));
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
